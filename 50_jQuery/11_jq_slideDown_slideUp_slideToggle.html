@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset = 'utf-8'>
+	<title>slideToggle</title>
+	<!-- jQuery import 방식2(CDN 방식) -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    // slideDown() : 아래쪽으로 나타나기
+    // slideUp() : 위쪽으로 사라지기
+    // slideToggel() : 아래쪽으로 나타나고 위쪽으로 사라지기 번ㅂㅎㄱ
+    $(document).ready(function(){
+        $("p:eq(0)").click(function(){
+            $("img").slideToggle(2000); // 기본 400 밀리초
+        });
+
+        // 두번째 p태그가 click 되면 사라지고, 세번째 p태그가 나타나게 처리
+        $("#p2").click(function(){
+            let $this = $(this); // 콜백 함수내의 this는 이벤트 발생 객체
+            $this.css("background-color", "yellow");
+            $("#p3").slideDown("slow", function(){ // 나타남
+                $("#p2").slideUp("slow"); // 사라짐
+            });
+
+            // 세번째 p태그가 click되면 p태그 사라지고, 두번째 p태그가 나타나게 처리
+            $("#p3").click(function(){
+                let $this = $(this);
+                $this.css("background-color", "green");
+                $this.slideUp(2000, function(){
+                    $("#p2").slideDown(2000);
+                });
+            });
+        });
+
+
+    });
+    
+</script>    
+<style>
+    p {border: 2px solid green;}
+</style>
+</head>
+<body>
+    <p>첫번째 : 자동차 보이기, 자동차 숨기기</p>
+    <hr>
+    <p id="p2">두번째 p태그</p>
+    <p id="p3">세번째 p태그</p>
+    <p id="p4">네번째 p태그</p>
+    <hr><hr>
+    <img src="images/car1.jpg" alt="자동차사진">
+    
+</body>
+</html>

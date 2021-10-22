@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset = 'utf-8'>
+	<title></title>
+	<!-- jQuery import 방식2(CDN 방식) -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    // Java, HTML, CSS, Javascript, jQuery 문자열을 배열에 저장하고
+    // 1초마다 순차적으로 #myDiv 위치에 출력
+    $(function(){
+        let subject = ["Java", "HTML", "CSS", "Javascript", "jQuery"];
+        let index = 0;
+        let timer = setInterval(function(){
+            // console.log(index + " : " + subject[index]);
+            // #myDiv 위치에 출력
+            $("#myDiv").html(subject[index]);
+            index++;
+            // 인덱스 번호가 배열의 크기보다 크면 0으로 초기화
+            if(index >= subject.length){
+                index = 0;
+            }
+        }, 1000);
+
+        // 중지버튼이 클릭되면 과목 보여주기 정지 처리
+        $("#stop").click(function(){
+            clearInterval(timer);
+        });
+    });
+    
+</script>    
+</head>
+<body>
+    <button id="stop">중지</button>
+    <!-- Java, HTML, CSS, Javascript, jQuery-->
+    <div id="myDiv">Java</div>
+    
+</body>
+</html>

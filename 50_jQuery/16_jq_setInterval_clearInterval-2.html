@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset = 'utf-8'>
+	<title></title>
+	<!-- jQuery import 방식2(CDN 방식) -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    // Java, HTML, CSS, Javascript, jQuery 문자열을 배열에 저장하고
+    // 1초마다 순차적으로 #myDiv 위치에 출력
+    let subject = ["Java", "HTML", "CSS", "Javascript", "jQuery"];
+    let index = 0;
+    let timer = null;
+    $(function(){
+        $("#startJQ").click(start);
+        $("#stopJQ").click(stop);
+        // $("#startJQ").on("click", start);
+        // $("#stopJQ").on("click", stop);
+    });
+
+    function start(){
+        if(timer == null){
+                timer = setInterval(function(){
+                    $("#myDiv").html(subject[index++]);
+                    if(index >= subject.length) index = 0;
+                }, 1000);
+            }
+    }
+
+    function stop(){
+        clearInterval(timer);
+            timer = null;
+    }
+
+    // JavaScript 코드로 이벤트 연결
+    window.onload = function(){
+        let startJs = document.getElementById("startJS");
+        let stopJs = document.getElementById("stopJs");
+
+        startJS.onclick = start();
+        stopJs.onclick = stop();
+    };
+    
+</script>    
+<style>
+    div {background-color: yellow; font-size: 2rem;}
+</style>
+</head>
+<body>
+    <button id="startJQ">목록 보여주기(JQ 이벤트 연결)</button>
+    <button id="stopJQ">중지(JQ 이벤트 연결)</button>
+    <hr>
+
+    <!-- HTML 에서 이벤트 연결-->
+    <button onclick="startJS()">목록 보여주기(Javascript 이벤트 연결)</button>
+    <button onclick="stopJS()">중지(Javascript 이벤트 연결)</button>
+
+    <hr><hr>
+    <p>Java, HTML, CSS, Javascript, jQuery</p>
+    <div id="myDiv">Java</div>
+
+    
+</body>
+</html>
