@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Copy element &apos;Ex01_StringBuffer.java&apos; to &apos;com.mystudy.stringbuilder.Ex01_StringBuffer.java&apos;&#x0D;&#x0A;- Original project: &apos;03_StringBuilder&apos;&#x0D;&#x0A;- Destination element: &apos;com.mystudy.stringbuilder.Ex01_StringBuffer.java&apos;&#x0D;&#x0A;- Original element: &apos;com.mystudy.stringbuilder.Ex01_StringBuffer.java&apos;" description="Copy compilation unit" destination="/src&lt;com.mystudy.stringbuilder{Ex01_StringBuffer.java" element1="/src&lt;com.mystudy.stringbuilder{Ex01_StringBuffer.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1626829602383" units="1" version="1.0"/>
-</session>

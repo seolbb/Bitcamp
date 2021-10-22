@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Copy element &apos;StudentVO.java&apos; to &apos;30_Test/src/com.test.test&apos;&#x0D;&#x0A;- Original project: &apos;15_IO_Buffered_PrintWriter&apos;&#x0D;&#x0A;- Destination element: &apos;30_Test/src/com.test.test&apos;&#x0D;&#x0A;- Original element: &apos;com.mystudy.ex06_object.StudentVO.java&apos;" description="Copy compilation unit" destination="=30_Test/src&lt;com.test.test" element1="/src&lt;com.mystudy.ex06_object{StudentVO.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1629503998984" units="1" version="1.0"/>
-</session>
