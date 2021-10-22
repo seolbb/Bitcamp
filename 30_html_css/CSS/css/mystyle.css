@@ -1,0 +1,18 @@
+    h1 {background-color: aqua;}
+    h2 {background-color: brown;}
+    h2 {background-color: yellow;}
+    
+    /* 선택자(.) : class 의미 */
+    .red {background-color: red;}
+    .green {background-color: green;}
+    .yellow {background-color: yellow;}
+    
+    /* 선택자(#) : id를 의미 */
+    #yellow {background-color: yellow;}
+    
+    /* 선택자 우선순위 : id, class, 태그(tag)
+       선택자에서 구체적이고 상세하게 지정하면 가중치 증가(적용 우선순위 높아짐) */
+    p {background-color: gray;}
+    div > p {background-color: orange}
+    
+    p.green{background-color: greenyellow;}
