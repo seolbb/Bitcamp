@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;StudentVO.java&apos; to &apos;07_Exception/src/com.mystudy.exception3_sungjuk&apos;&#x0D;&#x0A;- Original project: &apos;04_JavaBean&apos;&#x0D;&#x0A;- Destination element: &apos;07_Exception/src/com.mystudy.exception3_sungjuk&apos;&#x0D;&#x0A;- Original element: &apos;com.mystudy.bean_vo.StudentVO.java&apos;" description="Copy compilation unit" destination="=07_Exception/src&lt;com.mystudy.exception3_sungjuk" element1="/src&lt;com.mystudy.bean_vo{StudentVO.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1627272054996" units="1" version="1.0"/>
+</session>
